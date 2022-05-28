@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 06 | Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+  border-style: hidden hidden solid hidden;
+}
+p.mix {border-style: hidden hideen solid hideen;}
+/* .grid-item {
+  
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 22px;
+  text-align: center;
+} */
+</style>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#" class="active">Week 6 Project</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Yahtzee</h1>
+    </header>
+    <main>
+        <hr>
+
+        <section>
+        <div class="grid-container">
+            <div class="grid-item">Upper Section</div>
+            <div class="grid-item">How to Score</div>
+            <div class="grid-item">Game #1</div>  
+            
+            <div class="grid-item">Aces</div>
+            <div class="grid-item">Count and add only aces</div>  
+            <div class="grid-item"><div><input type="text" id="addend1" name="addend1"></div></div>
+
+            <div class="grid-item">Twos</div>  
+            <div class="grid-item">Count and add only twos</div>
+            <div class="grid-item"><div><input type="text" id="addend2" name="addend2"></div></div>
+
+            <div class="grid-item">Threes</div>  
+            <div class="grid-item">Count and add only threes</div>
+            <div class="grid-item"><div><input type="text" id="addend3" name="addend3"></div></div>
+  
+            <div class="grid-item">Fours</div>  
+            <div class="grid-item">Count and add only fours</div>
+            <div class="grid-item"><div><input type="text" id="addend4" name="addend4"></div></div>
+   
+            <div class="grid-item">Fives</div>  
+            <div class="grid-item">Count and add only fives</div>
+            <div class="grid-item"><div><input type="text" id="addend5" name="addend5"></div></div>
+
+            <div class="grid-item">Sixes</div>  
+            <div class="grid-item">Count and add only sixes</div>
+            <div class="grid-item"><div><input type="text" id="addend6" name="addend6"></div></div>
+   
+            <div class="grid-item">Bonus (if total score is 63+)</div>  
+            <div class="grid-item">Score 35</div>
+            <div class="grid-item"><div><input type="text" id="addend7" name="addend7"></div></div>
+ 
+            
+            
+            <div class="grid-item">Lower Section</div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+
+
+            <div class="grid-item">3 of a kind</div>  
+            <div class="grid-item">add total of all dice</div>
+            <div class="grid-item"><div><input type="text" id="addend8" name="addend8"></div></div>
+            
+            <div class="grid-item">4 of a kind</div>  
+            <div class="grid-item">add total of all dice</div>
+            <div class="grid-item"><div><input type="text" id="addend9" name="addend9"></div></div>
+
+            <div class="grid-item">Full House</div>  
+            <div class="grid-item">Score 25</div>
+            <div class="grid-item"><div><input type="text" id="addend10" name="addend10"></div></div>
+
+            <div class="grid-item">Sm. Straight (4)</div>  
+            <div class="grid-item">Score 30</div>
+            <div class="grid-item"><div><input type="text" id="addend11" name="addend11"></div></div>
+
+            <div class="grid-item">Lg. Straight(5)</div>  
+            <div class="grid-item">score 30</div>
+            <div class="grid-item"><div><input type="text" id="addend12" name="addend12"></div></div>
+
+            <div class="grid-item">Yahtzee (5 same)</div>  
+            <div class="grid-item">score 50</div>
+            <div class="grid-item"><div><input type="text" id="addend13" name="addend13"></div></div>
+
+            <div class="grid-item">Chance</div>  
+            <div class="grid-item">Score total of dice</div>
+            <div class="grid-item"><div><input type="text" id="addend14" name="addend14"></div></div>
+
+            <div class="grid-item">Yahtzee Bonus</div>  
+            <div class="grid-item">add 100 points per extra Yahtzee</div>
+            <div class="grid-item"><div><input type="text" id="addend15" name="addend15"></div></div>
+
+            <div class="grid-item">Grand Total</div>  
+            <div class="grid-item">---></div>
+            <div class="grid-item"><div><input type="text" id="sum" name="sum" disabled></div></div>
+
+
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"><input type="button" id="addNumbers" value="Add Numbers"></div>
+            <div></div>
+            <div></div>
+            <div> <input type="button" id="resets" value="Reset Board"></div>
+          </div>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Yahtzee | Project
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task3.js"></script>
+</body>
+
+</html>
